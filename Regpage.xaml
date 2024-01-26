@@ -1,0 +1,58 @@
+﻿<Page x:Class="schappp.Regpage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:schappp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="850" 
+      Title="Regpage" Background="Violet">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="https://t4.ftcdn.net/jpg/04/71/35/53/240_F_471355337_eOdxJI5xYFtrU1Y6MoFDfWtN5gY9AeHv.jpg"  Grid.RowSpan="9" Grid.ColumnSpan="7" Margin="5,-22,25,-7"></Image>
+        <Label  x:Name="lblreg" Content="Registration" FontSize="30" FontWeight="UltraBold" FontFamily="futura" Grid.ColumnSpan="6" HorizontalAlignment="Center"></Label>
+        <Label  x:Name="lblfir" Content="firstname" FontWeight="DemiBold" FontSize="20" Margin="4,6,72,7" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+        <TextBox x:Name="txtfirst" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,5,0,10" Grid.Row="1" />
+        <Label  x:Name="lblsec" Content="secondname" FontWeight="DemiBold" FontSize="19" Grid.Row="1" Margin="120,48,47,6" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="txtsecondname"  Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,5,0,14" />
+
+        <Label  x:Name="lbldateofbirth" Content="dateofbirth" FontWeight="DemiBold" FontSize="20" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,57,0"></Label>
+        <TextBox x:Name="txtdateofbirth"   FontWeight="DemiBold" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="1,11,7,9" />
+
+
+        <Label  x:Name="lblemail" Content="emailid" FontWeight="DemiBold" FontSize="20" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,72,0"></Label>
+        <TextBox x:Name="txtemail"  Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,12,0,7" ></TextBox>
+
+        <Label  x:Name="lblusername" Content="username" FontWeight="DemiBold" FontSize="20" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,67,0"></Label>
+        <TextBox x:Name="txtusername"  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,13,0,12" />
+
+        <Label  x:Name="lblpassword" Content="password" FontWeight="DemiBold" FontSize="20" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,72,0"></Label>
+        <TextBox x:Name="txtpassword"  Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,8,0,11" />
+        <Button x:Name="BtnRegister"  Click="BtnRegister_Click"  Background="Transparent"  Content="Register" Grid.Row="7" Grid.Column="2" FontSize="30" FontWeight="UltraBold" FontFamily="futura" Grid.ColumnSpan="2" Margin="44,5,0,4" HorizontalAlignment="Left" ></Button>
+
+
+
+    </Grid>
+</Page>

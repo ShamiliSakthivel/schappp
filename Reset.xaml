@@ -1,0 +1,34 @@
+﻿<Window x:Class="schappp.Reset"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:schappp"
+        mc:Ignorable="d"
+        Title="Reset" Height="500" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Image Source="https://www.colorpsychology.org/wp-content/uploads/2023/03/blue-and-pink-pink-blue-1024x653.jpg" Stretch="Fill" Margin="0,0,0,2" Grid.ColumnSpan="2" Grid.RowSpan="5"/>
+        <Label Content="Resetpassword" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="110,7,0,18" Width="220" Grid.ColumnSpan="2" FontWeight="ExtraBold" FontSize="25" />
+        <Label Content="username" Grid.Row="1" Grid.Column="0" Margin="15,17,15,25" FontSize="25" FontWeight="Bold"/>
+        <TextBox x:Name="txtusername"  Grid.Row="1" Grid.Column="1" Margin="15,12,25,30"  FontSize="25" FontWeight="Bold"/>
+        <Label Content="password" Grid.Row="2" Grid.Column="0"  Margin="15,17,15,31"  FontSize="25" FontWeight="Bold"></Label>
+        <TextBox x:Name="txtpassword"  Grid.Row="2" Grid.Column="1" Margin="15,12,25,30"  FontSize="25" FontWeight="Bold"></TextBox>
+        <Label Content="confirmpassword" Grid.Row="3" Grid.Column="0" Margin="10,9,5,33"  FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtconfirm"  Grid.Row="3" Grid.Column="1" Margin="15,12,25,30" FontSize="25" FontWeight="Bold"></TextBox>
+        <Button x:Name="btnreset" Content="Reset" Click="btnreset_Click" Grid.Row="4" Grid.ColumnSpan="2" Margin="120,7,130,45"  FontSize="25" FontWeight="Bold" />
+    </Grid>
+</Window>
